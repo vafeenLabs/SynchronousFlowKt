@@ -6,12 +6,12 @@ plugins {
 
 android {
     namespace = "android.vafeen.synchronousflow"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "android.vafeen.synchronousflow"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -56,4 +56,8 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    // koin
+    implementation(libs.koin.android)
+    // koin for compose
+    implementation(libs.koin.androidx.compose)
 }
